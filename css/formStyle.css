@@ -1,0 +1,129 @@
+
+:root{
+    --color-white-redish:rgb(230, 222, 222);
+}
+
+.container--form{
+    padding-top: 150px;
+}
+.center{
+    width: 100%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+/* LEft side */
+.center__leftSide{
+    background-color: rgb(180, 180, 180);
+    width: 45%;
+
+    height: 800px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    z-index: 2;
+
+    
+}
+.center__form{
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    
+    border-radius: 2px 0px 0px 2px; 
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    padding-left: 80px;
+    padding-top: 35px;
+}
+.center__title{
+    font-family: 'Finish', Courier, monospace;
+    font-size: 4rem;
+    letter-spacing: 10px;
+    
+    background: #0d0628 url("../assets/images/backGrounds/dogOnCheval.jpg");
+    background-size: 90%;
+    background-position: 50%;
+    filter: brightness(110%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.center__title--down{
+    margin-top: -75px;
+    margin-left: 25px;
+}
+.center__subtitle{
+    margin-top: -80px;
+    color: var(--color-white-redish);
+    font-family: 'Bebas', Courier, monospace;
+    letter-spacing: 8px;
+    /* letter-spacing: 10px; */
+    font-weight: 100;
+}
+.input {
+    outline: none;
+    border: 0;
+    color: var(--color-white-redish);
+
+    background: transparent;
+    
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* right side  */
+.center__rigthPart{
+    position: relative;
+    width: 55%;
+    height: 800px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.center__rigthPart::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../assets/images/backGrounds/dogOnCheval.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right top;
+
+    
+    filter: brightness(30%) grayscale(100%) blur(2px);
+    
+}
+
+.center__rigthPart .center__ImageRigth{
+    position: relative;
+
+    width: 80%;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    border-radius: 0px 2px 2px 0px;
+    z-index: 1;
+    background-image: url("../assets/images/backGrounds/dogOnCheval.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    height: 84.3%;
+}
+
+
