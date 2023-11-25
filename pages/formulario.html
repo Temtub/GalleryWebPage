@@ -4,49 +4,80 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Museo</title>
+    <title>Lumiere</title>
 
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/formStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+
+    <!-- Navbar burguer -->
+    <section class="burguerNav disNone closeSection" id="burguerNav">
+
+        <div class="burguerNav__navBar" id="burguerNav__navBar">
+
+            <i class="fa-solid fa-arrow-left arrowLeft" id="arrowLeft"></i>
+        </div>
+    </section>
+
+
     <div class="container container--form">
+
+        <!-- navbar -->
+        <nav class="navbar">
+
+            <i class="fa-solid fa-bars" id="burguerButton"></i>
+
+            <h1>Lumiere</h1>
+
+
+        </nav>
+
+        <!-- section with the image and the form -->
         <section class="center">
             <!-- Left side -->
             <article class="center__leftSide">
                 <!-- form that appears on the left side -->
                 <form action="" class="center__form">
 
-                    <h1 class="center__title">RESERVAR</h1>
+                    <h1 class="center__title">RESERVA</h1>
                     <h1 class="center__title center__title--down">ENTRADAS</h1>
 
                     <h3 class="center__subtitle">
-                        Explora el arte en su maxima expresion. 
+                        Explora el arte en su maxima expresion.
                     </h3>
-                    <div>
-                        <!-- Nombre -->
-                        <input class="input" type="text" placeholder="Nombre" />
-                        <!-- Ciudad -->
-                        <input class="input" type="text" placeholder="Ciudad" />
-                    </div>
 
-                    <!-- Correo -->
-                    <input class="input" type="email" placeholder="Correo" />
+                    <section class="center__inputs">
 
-                    <div>
-                        <!-- Tipo de entrada -->
-                        <select name="" id="">
-                            <option value="" disabled selected>Escoger</option>
-                            <option value="">Basica</option>
-                            <option value="">Premium</option>
-                            <option value="">Especial</option>
-                        </select>
-                        <!-- Numero de entradas -->
-                        <input class="input" type="number" placeholder="Numero de entradas" />
-                    </div>
-                    <!-- Hora de la visita -->
-                    <input class="input" type="time" />
+                        <div class="center__twoInputs">
+                            <!-- Nombre -->
+                            <input class="input input--halfSize" type="text" placeholder="Nombre" />
+                            <!-- Ciudad -->
+                            <input class="input input--halfSize" type="text" placeholder="Ciudad" />
+                        </div>
+
+                        <!-- Correo -->
+                        <input class="input" type="email" placeholder="Correo" />
+
+                        <div class="center__twoInputs">
+                            <!-- Tipo de entrada -->
+                            <select name="" id="" class="center__select">
+                                <option class="center__option" value="" disabled selected>Escoger</option>
+                                <option class="center__option" value="">Basica</option>
+                                <option class="center__option" value="">Premium</option>
+                                <option class="center__option" value="">Especial</option>
+                            </select>
+                            
+                            <!-- Numero de entradas -->
+                            <input class="input input--thridSize" type="number" placeholder="Numero de entradas" />
+                            <!-- Hora de la visita -->
+                            <input class="input input--thridSize" type="time" />
+                        </div>
+                    </section>
+
+                    <button type="submit" class="button__white" value="Enviar">Enviar</button>
                 </form>
             </article>
             <!-- rigth side -->
@@ -55,6 +86,8 @@
             </article>
         </section>
     </div>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
