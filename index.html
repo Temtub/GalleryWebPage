@@ -6,12 +6,26 @@
     <title>Lumiere</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     
     <!-- Container of the page -->
     <div class="container">
+
+        <nav class="navBar">
+            <i class="fas fa-bars"></i>
+        
+            <a href="" class="navBar__link"><h2 class="navBar__title">Lumiere</h2></a>
+        
+            <div class="navBar__icons">
+                <i class="fas fa-ticket navBar__icon"></i>
+                <i class="fas fa-info navBar__icon"></i>
+                <i class="fas fa-magnifying-glass navBar__icon"></i>
+            </div>
+        
+            <div class="navBar__blur"></div>
+        </nav>
 
         <section class="introduction">
             <h1>Explora el arte</h1>
@@ -61,39 +75,58 @@
             <div class="lines__cube lines__cube--wave"></div>
         </div>
 
+
+        
         <footer>
 
             <section class="avisosLegales">
-                <h2>¿Algun problema?</h1>
+                <h2 class="footer__title">¿Algun problema?</h1>
                 <p class="writeAnimation">Contactanos</p>
                 <div class="avissosList">
                     <li class="avisosLegales__list">
-                        <ol><a href="#">Avisos legales</a></ol>
-                        <ol><a href="#">Política de privacidad</a></ol>
-                        <ol><a href="#">Politica de cookies</a></ol>
-                        <ol><a href="#">Modelo semantico digital</a></ol>
-                        <ol><a href="#">Accesibilidad</a></ol>
-                        <ol><a href="#">Contacto</a></ol>
+                        <p class="listTitle">Soporte</p>
+                        <ol><a class="footerLinks" href="#">Avisos legales</a></ol>
+                        <ol><a class="footerLinks" href="#">Política de privacidad</a></ol>
+                        <ol><a class="footerLinks" href="#">Politica de cookies</a></ol>
+                        <ol><a class="footerLinks" href="#">Modelo semantico digital</a></ol>
+                        <ol><a class="footerLinks" href="#">Accesibilidad</a></ol>
+                        <ol><a class="footerLinks" href="#">Contacto</a></ol>
                     </li>
-                    <ul class="avisosLegales__quest">
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#" lang="fr">Empleo (en francés)</a></li>
-                        <li><a href="#">Privatización de espacios</a></li>
-                        <li><a href="#">¡Danos tu opinión!</a></li>
-                    </ul>
+                    <li class="avisosLegales__quest">
+                        <p class="listTitle">Contactanos</p>
+                        <ol><a class="footerLinks" href="#">Preguntas frecuentes</a></ol>
+                        <ol><a class="footerLinks" href="#">Contacto</a></ol>
+                        <ol><a class="footerLinks" href="#" lang="fr">Empleo</a></ol>
+                        <ol><a class="footerLinks" href="#">Privatización de espacios</a></ol>
+                        <ol><a class="footerLinks" href="#">¡Danos tu opinión!</a></ol>
+                    </li>
                 </div>
             </section>
 
+            <div class="lines lines--footer ">
+                <div class="lines__straightLine lines__straightLine--footer"></div>
+                <div class="lines__cube black"></div>
+                <div class="lines__cube black"></div>
+                <div class="lines__straightLine lines__straightLine--footer lines__straightLine--footerShort"></div>
+            </div>
+            
+            <div class="lines lines--footer lines--socials">
+                <div class="lines__cube black"></div>
+                <div class="lines__straightLine lines__straightLine--footer lines__straightLine--footerShort"></div>
+                <div class="lines__cube black"></div>
+                <div class="lines__straightLine lines__straightLine--footer"></div>
+            </div>
+
             <section class="socials">
                 <div>
+                    <h2 class="footer__title footer__title--socials">Nuestrar redes sociales</h1>
                     <div class="redesSociales">
-                        <a href="#" class="icono"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="icono"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="icono"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="icono"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="icono"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="icono"><i class="fab fa-pinterest"></i></a>
+                        <a class="footerLinks" href="#" class="icono"><i class="fab faviconIcon fa-facebook"></i></a>
+                        <a class="footerLinks" href="#" class="icono"><i class="fab faviconIcon fa-twitter"></i></a>
+                        <a class="footerLinks" href="#" class="icono"><i class="fab faviconIcon fa-instagram"></i></a>
+                        <a class="footerLinks" href="#" class="icono"><i class="fab faviconIcon fa-linkedin"></i></a>
+                        <a class="footerLinks" href="#" class="icono"><i class="fab faviconIcon fa-youtube"></i></a>
+                        <a class="footerLinks" href="#" class="icono"><i class="fab faviconIcon fa-pinterest"></i></a>
                     </div>
                     <div></div>
                 </div>

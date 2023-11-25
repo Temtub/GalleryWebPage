@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+}
+
+.navBar--footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+.navBar__hamburguer{
+    margin-right: 150px;
+}
+.sect{
+    background-color: rgb(95, 89, 80);
+    font-family: ModernSans;
+    padding: 20px;
+    /* margin-top: 50px; */
+    margin-bottom: 20px;
+}
+.sect__title{
+    font-family: Bebas;
+}
+
+.footer--small{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.avissosList--small{
+    display: flex;
+    justify-content: center;
+    padding-right: 100px;
+}

@@ -21,6 +21,14 @@ body{
     position: relative;
 }
 
+:root{
+    --color-white-redish:rgb(230, 222, 222);
+    --font-family-subText:'Bebas', Courier, monospace;
+    --font-family-noCaps:'ModernSans', Courier, monospace;
+}
+.spacer{
+    height: 100px;
+}
 .container{
     background-color: black;
 
@@ -33,6 +41,52 @@ body{
 
     /* padding-bottom: 100px; */
 }
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 220px;
+    align-items: center;
+
+    color: white;
+    position: fixed;
+    border-bottom: 1px solid white;
+    width: 100%;
+    z-index: 50;
+}
+.navBar__title{
+    font-size: 2rem;
+    letter-spacing: 20px;
+    
+    z-index: 50;
+}
+.navBar__link{
+    color: white;
+}
+.navBar__icons{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 5%;
+}
+.navBar__icon{
+    font-size: 1.3rem;
+}
+/* .navBar__blur{
+    width: 110%;
+    height: 115%;
+    background-color: transparent;
+    filter: blur(70px);
+    position: absolute;
+    
+    left: -10px;
+    z-index: 40;
+    transition: background-color .2s;
+} */
+/* .navBar:hover .navBar__blur{
+    background-color: rgba(0, 0, 0, 0.459);
+} */
 .introduction{
     background-image: url("../assets/images/backGrounds/personInArtGallery.jpg");
     background-position: bottom;
@@ -244,7 +298,6 @@ body{
     width: 100%;
     height: 350px;
     margin-top: 150px;
-    margin-bottom: 1000px;
 
     background-image: url("../assets/images/backGrounds/wavySea.jpg");
     background-repeat: no-repeat;
@@ -312,10 +365,18 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-position: center;
     background-size: cover;
     background-image: url("../assets/images/backGrounds/papel.jpg");
+
+    padding: 60px;
+    margin-top: 100px;
+}
+.footer__title{
+    font-family: Bebas; 
+    margin-left: 50px;
+    font-size: 2rem;
 }
 .writeAnimation{
     display: block;
@@ -324,16 +385,44 @@ footer{
     border-right: 4px solid;
     width: 11ch;
     overflow: hidden;
-
+    margin-left: 50px;
+    margin-top: -30px;
+    font-size: 1.2rem;
     animation: writeAnimation 2s steps(11), blinkText .5s infinite step-end alternate;
+}
+.footerLinks{
+    color: black;
+}
+.footerLinks:hover{
+    color: rgba(0, 0, 0, 0.747)
+}
+.faviconIcon{
+    font-size: 2rem;
+    margin: 10px;
 }
 .avissosList{
     display: flex;
     flex-direction: row;
 }
+.footer__title--socials{
+    margin-left: -30px      ;
+}
+.listTitle{
+    font-size: 1.2rem;
+    font-family: ModernSans;
+    font-weight: 900;
+    margin-left: 30px;
+}
 .avisosLegales{
     display: flex;
     flex-direction: column;
+}
+.avisosLegales__list{
+    margin-left: 50px;
+}
+.avisosLegales__quest{
+    
+    margin-left: 50px;
 }
 li{
     list-style: none;
@@ -341,10 +430,97 @@ li{
 a{
     text-decoration: none;
 }
+
+.lines--footer{
+  margin: 0;  
+  width: 20px;
+  margin-left: -700px;
+}
+.lines--socials{
+    margin: 0;
+    margin-right: -530px;
+}
+.lines__straightLine--footer{
+    height: 150px;
+    background-color: black;
+}
+.lines__straightLine--footerShort{
+    height: 80px;
+}
 /* end footer part */
 .disNone{
     display: none;
 }
+.black{
+    background-color: black;
+}
+
+/* Buttons */
+.button__white {
+    position: relative;
+
+    width: 120px;
+    height: 35px;
+
+    background-color: transparent;
+
+    border: 3px solid var(--color-white-redish);
+
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: var(--font-family-noCaps);
+    color: var(--color-white-redish);
+
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+
+    overflow: hidden;
+
+    display: block;
+    
+}
+.button__white::after {
+    content: ""; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 120px;
+
+    background-color: #ffffff54;
+
+    transition: transform 0.8   s;
+    transform: rotate(45deg) translateY(180%) translateX(-35%);
+
+    z-index: 1;
+}
+.button__white:hover::after {
+    transform: rotate(45deg) translateY(-200%) translateX(-35%);
+}
+.button__white::before {
+    content: ""; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10px;
+    width: 120px;
+
+    background-color: #ffffff54;
+
+    transition: transform 1s;
+    transform: rotate(45deg) translateY(1600%) translateX(-25%);
+
+    z-index: 1;
+}
+.button__white:hover::before {
+    transform: rotate(45deg) translateY(-320%) translateX(-5%);
+}
+
 
 @keyframes writeAnimation {
     from{

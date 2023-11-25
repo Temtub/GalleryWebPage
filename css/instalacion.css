@@ -1,0 +1,37 @@
+.instalacionesResumen{
+    background-image: url("../assets/images/gallery/instalacionBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 400px;
+    margin: auto;
+    color: white;
+    padding: 20px;
+    font-family: ModernSans;
+}
+.instalacionesResumen__title{
+    font-family: Bebas;
+}
+.instalacionesResumen__text{
+    width: 60%;
+}
+.instalations{
+    background-image: url("../assets/images/gallery/plantasMuseo.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+}
+.instalations__title{
+    color: black;
+    font-family: Bebas;
+    position: absolute;
+    left: -190px;
+    font-size: 3rem;
+}
+.instalations__title--white{
+    color: white;
+}

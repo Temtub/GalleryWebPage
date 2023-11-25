@@ -1,9 +1,5 @@
 
-:root{
-    --color-white-redish:rgb(230, 222, 222);
-    --font-family-subText:'Bebas', Courier, monospace;
-    --font-family-noCaps:'ModernSans', Courier, monospace;
-}
+
 
 /* .container--form{
     padding-top: 150px;
@@ -175,70 +171,7 @@
     height: 84.3%;
 }
 
-.button__white {
-    position: relative;
 
-    width: 120px;
-    height: 35px;
-
-    background-color: transparent;
-
-    border: 3px solid var(--color-white-redish);
-
-    font-size: 1rem;
-    font-weight: 900;
-    font-family: var(--font-family-noCaps);
-    color: var(--color-white-redish);
-
-    z-index: 2;
-    text-align: center;
-    cursor: pointer;
-
-    overflow: hidden;
-
-    display: block;
-    
-}
-.button__white::after {
-    content: ""; 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 50px;
-    width: 120px;
-
-    background-color: #ffffff54;
-
-    transition: transform 0.8   s;
-    transform: rotate(45deg) translateY(180%) translateX(-35%);
-
-    z-index: 1;
-}
-.button__white:hover::after {
-    transform: rotate(45deg) translateY(-200%) translateX(-35%);
-}
-.button__white::before {
-    content: ""; 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 10px;
-    width: 120px;
-
-    background-color: #ffffff54;
-
-    transition: transform 1s;
-    transform: rotate(45deg) translateY(1600%) translateX(-25%);
-
-    z-index: 1;
-}
-.button__white:hover::before {
-    transform: rotate(45deg) translateY(-320%) translateX(-5%);
-}
 
 
 
