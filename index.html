@@ -13,17 +13,40 @@
     <!-- Container of the page -->
     <div class="container">
 
+        <article class="navOpen closeNavBar" id="navOpen">
+            <h1 class="navOpen__title">Donde quieres ir</h1>
+            
+            <li>
+                <ol><a class="navOpen__link" href="./index.html"><i class="fa-solid fa-circle-chevron-right"></i> Inicio</a></ol>
+                <ol><a class="navOpen__link" href="./pages/formulario.html"><i class="fa-solid fa__deactivated fa-circle-chevron-right"></i> Conseguir entradas</a></ol>
+                <ol><a class="navOpen__link" href="./pages/whoAreWe.html"><i class="fa-solid fa__deactivated fa-circle-chevron-right"></i> Nuestro museo</a></ol>
+                <ol><a class="navOpen__link" href="./pages/instalaciones.html"><i class="fa-solid fa__deactivated fa-circle-chevron-right"></i> Las instalaciones</a></ol>
+            </li>
+
+            <i class="navOpen__arrowLeft fa-solid fa-circle-left leftArrowCloser" id="leftArrow"></i>
+        </article>
+
+        
+
         <nav class="navBar">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" id="hamburguer"></i>
         
             <a href="" class="navBar__link"><h2 class="navBar__title">Lumiere</h2></a>
         
             <div class="navBar__icons">
-                <i class="fas fa-ticket navBar__icon"></i>
-                <i class="fas fa-info navBar__icon"></i>
-                <i class="fas fa-magnifying-glass navBar__icon"></i>
+                <a class="navBar__links" href="./pages/formulario.html"><i class="fas fa-ticket navBar__icon"></i></a>
+                <a class="navBar__links" href="./pages/whoAreWe.html"><i class="fas fa-info navBar__icon"></i></a>
+                <i id="lupa" class="fas fa-magnifying-glass navBar__icon"></i>
             </div>
         
+            <form class="form__search" id="form">
+                <fieldset id="form__fieldset" class="form__fieldset">
+    
+                    <legend  class="form__legend ">Donde vamos</legend>
+                    <input id="searcher" class="input inputSearch disNone" type="search" placeholder="Buscar">
+                </fieldset>
+            </form>
+            
             <div class="navBar__blur"></div>
         </nav>
 

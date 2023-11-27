@@ -71,21 +71,7 @@
     justify-content: space-between;
     
 }
-.input {
-    outline: none;
 
-    background: transparent;
-
-    color: var(--color-white-redish);
-    
-    border: 0;
-    border-bottom: 2px solid var(--color-white-redish);
-
-    font-size: 14px;
-    font-weight: 300;
-
-    font-family: var(--font-family-noCaps);
-}
 .input--halfSize{
     width: 45%;
 }

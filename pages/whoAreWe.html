@@ -12,24 +12,46 @@
 </head>
 <body>
 
+    <article class="navOpen closeNavBar disNone" id="navOpen">
+        <h1 class="navOpen__title">Donde quieres ir</h1>
+        
+        <li>
+            <ol><a class="navOpen__link" href="../index.html"><i class="fa-solid fa__deactivated fa-circle-chevron-right"></i> Inicio</a></ol>
+            <ol><a class="navOpen__link" href="./formulario.html"><i class="fa-solid fa__deactivated fa-circle-chevron-right"></i> Conseguir entradas</a></ol>
+            <ol><a class="navOpen__link" href="./whoAreWe.html"><i class="fa-solid  fa-circle-chevron-right"></i> Nuestro museo</a></ol>
+            <ol><a class="navOpen__link" href="./instalaciones.html"><i class="fa-solid fa__deactivated fa-circle-chevron-right"></i> Las instalaciones</a></ol>
+        </li>
 
+        <i class="navOpen__arrowLeft fa-solid fa-circle-left leftArrowCloser" id="leftArrow"></i>
+    </article>
     <!-- Container of the page -->
     <div class="container container--footer">
 
         
-        <nav class="navBar navBar--footer">
-            <i class="fas navBar__hamburguer fa-bars"></i>
-            
+        <!-- navbar -->
+        <nav class="navBar">
+            <i class="fas fa-bars navBar__barras" id="hamburguer"></i>
+        
             <a href="../index.html" class="navBar__link"><h2 class="navBar__title">Lumiere</h2></a>
-            
+        
             <div class="navBar__icons disNone">
-                <i class="fas fa-ticket navBar__icon"></i>
-                <i class="fas fa-info navBar__icon"></i>
-                <i class="fas fa-magnifying-glass navBar__icon"></i>
+                <a class="navBar__links" href="./formulario.html"><i class="fas fa-ticket navBar__icon"></i></a>
+                <a class="navBar__links" href="./whoAreWe.html"><i class="fas fa-info navBar__icon"></i></a>
+                <i id="lupa" class="fas fa-magnifying-glass navBar__icon"></i>
             </div>
+
+            <form class="form__search" id="form">
+                <fieldset id="form__fieldset" class="form__fieldset">
+        
+                    <legend  class="form__legend ">Donde vamos</legend>
+                    <input id="searcher" class="input inputSearch disNone" type="search" placeholder="Buscar">
+                </fieldset>
+            </form>
             
             <div class="navBar__blur"></div>
         </nav>
+
+
         <section class="spacer"></section>
 
         <section class="sect starteSect">
@@ -42,6 +64,7 @@
             </p>
         </section>
         
+
         <section class="sections">
 
             <section class="sect exposiciones">
@@ -56,6 +79,54 @@
                 </p>
                 <button type="submit" class="button__white" value="Enviar">Saber más</button>
                 
+                <section class="expositions disNone">
+
+                    <div class="exposition">
+                        <h1 class="exposition__title">Leonardo Davinci</h1>
+                        <div class="exposition__dates">
+                            <p class="exposition__dateStart">1452</p>
+                            <div class="exposition__dateLine"></div>
+                            <p class="exposition__dateEnd">1519</p>
+                        </div>
+                        <p class="exposition__phrase">La simplicidad es la máxima sofisticación</p>
+                        <p class="exposition__description">Polímata italiano del Renacimiento, destacando como pintor, escultor, 
+                            arquitecto, científico, ingeniero, inventor y escritor.</p>
+                    </div>
+        
+                    <div class="exposition exposition--vanghog">
+                        <h1 class="exposition__title">Vincent van Gogh</h1>
+                        <div class="exposition__dates">
+                            <p class="exposition__dateStart">1853 </p>
+                            <div class="exposition__dateLine"></div>
+                            <p class="exposition__dateEnd">1890 </p>
+                        </div>
+                        <p class="exposition__phrase">La normalidad es una carretera pavimentada: es cómoda de andar, pero no crecen flores en ella.</p>
+                        <p class="exposition__description">Pintó unos 800 cuadros (entre ellos 43 autorretratos y 148 acuarelas) y realizó más de 1600 dibujos. Una figura central en su vida fue su hermano menor Theo, marchante de arte en París, quien le prestó apoyo financiero de manera continua y desinteresada.</p>
+                    </div>
+        
+                    <div class="exposition exposition--vendant">
+                        <h1 class="exposition__title">Rembrandt</h1>
+                        <div class="exposition__dates">
+                            <p class="exposition__dateStart">1606 </p>
+                            <div class="exposition__dateLine"></div>
+                            <p class="exposition__dateEnd">1669</p>
+                        </div>
+                        <p class="exposition__phrase">El mayor artista no tiene ningún concepto que un mármol no pueda expresar mejor.</p>
+                        <p class="exposition__description">Pintor y grabador neerlandés. La historia del arte lo considera uno de los mayores maestros barrocos de la pintura y el grabado, el artista más importante de la historia de los Países Bajos.</p>
+                    </div>
+        
+                    <div class="exposition exposition--caravaggio">
+                        <h1 class="exposition__title">Caravaggio</h1>
+                        <div class="exposition__dates">
+                            <p class="exposition__dateStart">1606 </p>
+                            <div class="exposition__dateLine"></div>
+                            <p class="exposition__dateEnd">1669</p>
+                        </div>
+                        <p class="exposition__phrase">Pinto directamente de la realidad y no de la fantasía.</p>
+                        <p class="exposition__description">Pintor italiano, activo en Roma, Nápoles, Malta y Sicilia entre 1593 y 1610. Su pintura combina una observación realista de la figura humana, tanto en lo físico como en lo emocional, con un uso dramático de la luz, lo cual ejerció una influencia decisiva en la formación de la pintura del Barroco.</p>
+                    </div>
+        
+                </section>
             </section>
             <section class="sect temporales">
                 
@@ -72,57 +143,210 @@
             </section>
         </section>
         
-        <section class="expositions disNone">
 
-            <div class="exposition">
-                <h1 class="exposition__title">Leonardo Davinci</h1>
-                <div class="exposition__dates">
-                    <p class="exposition__dateStart">1452</p>
-                    <div class="exposition__dateLine"></div>
-                    <p class="exposition__dateEnd">1519</p>
+        <section class="socialSections disNoneCar">
+
+            <div class="socialSections__comments">
+
+                <div class="socialSections__comment">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
                 </div>
-                <p class="exposition__phrase">La simplicidad es la máxima sofisticación</p>
-                <p class="exposition__description">Polímata italiano del Renacimiento, destacando como pintor, escultor, 
-                    arquitecto, científico, ingeniero, inventor y escritor.</p>
+                <div class="socialSections__comment">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialSections__comment">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialSections__comment">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialSections__comment">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialSections__comment ">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialSections__comment  socialSections__comment--big disNoneCar">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialSections__comment  socialSections__comment--big disNoneCar">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialSections__comment  socialSections__comment--big disNoneCar">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialSections__comment  socialSections__comment--big disNoneCar">
+                    <div class="socialSections__commentSidePart">
+                        <i class="fa-solid fa__white fa-star"></i>
+                    </div>
+
+                    <div class="socialSections__texts">
+                        <h2 class="socialSections__title">Comentario:</h2>
+                        <p class="socialSections__subti">Daniel Garcia</p>
+                        <div class="socialSections__stars">
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                            <i class="fa-solid fa__yellowStar fa-star"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="exposition exposition--vanghog">
-                <h1 class="exposition__title">Vincent van Gogh</h1>
-                <div class="exposition__dates">
-                    <p class="exposition__dateStart">1853 </p>
-                    <div class="exposition__dateLine"></div>
-                    <p class="exposition__dateEnd">1890 </p>
+            <div class="carrousel__container disNoneCar">
+                <div class="carrousel">
+                    <div class="carrousel__grande" id="carouselGrande">
+                        <img class="carrousel__img" src="../assets/images/instPost/post1.png" alt="Imagen 1" >
+                        <img class="carrousel__img" src="../assets/images/instPost/post2.png" alt="Imagen 2" >
+                        <img class="carrousel__img" src="../assets/images/instPost/post3.png" alt="Imagen 2" >
+                        <img class="carrousel__img" src="../assets/images/instPost/post4.png" alt="Imagen 2" >
+                        <img class="carrousel__img" src="../assets/images/instPost/post5.png" alt="Imagen 2" >
+                        <img class="carrousel__img" src="../assets/images/instPost/post6.png" alt="Imagen 2" >
+                    </div>
+            
+                    <ul class="carrousel__points">
+                        <li class="carrousel__point carrousel__point--active"></li>
+                        <li class="carrousel__point"></li>
+                        <li class="carrousel__point"></li>
+                        <li class="carrousel__point"></li>
+                        <li class="carrousel__point"></li>
+                        <li class="carrousel__point"></li>
+                    </ul>
                 </div>
-                <p class="exposition__phrase">La normalidad es una carretera pavimentada: es cómoda de andar, pero no crecen flores en ella.</p>
-                <p class="exposition__description">Pintó unos 800 cuadros (entre ellos 43 autorretratos y 148 acuarelas) y realizó más de 1600 dibujos. Una figura central en su vida fue su hermano menor Theo, marchante de arte en París, quien le prestó apoyo financiero de manera continua y desinteresada.</p>
-            </div>
-
-            <div class="exposition exposition--vendant">
-                <h1 class="exposition__title">Rembrandt</h1>
-                <div class="exposition__dates">
-                    <p class="exposition__dateStart">1606 </p>
-                    <div class="exposition__dateLine"></div>
-                    <p class="exposition__dateEnd">1669</p>
-                </div>
-                <p class="exposition__phrase">El mayor artista no tiene ningún concepto que un mármol no pueda expresar mejor.</p>
-                <p class="exposition__description">Pintor y grabador neerlandés. La historia del arte lo considera uno de los mayores maestros barrocos de la pintura y el grabado, el artista más importante de la historia de los Países Bajos.</p>
-            </div>
-
-            <div class="exposition exposition--caravaggio">
-                <h1 class="exposition__title">Caravaggio</h1>
-                <div class="exposition__dates">
-                    <p class="exposition__dateStart">1606 </p>
-                    <div class="exposition__dateLine"></div>
-                    <p class="exposition__dateEnd">1669</p>
-                </div>
-                <p class="exposition__phrase">Pinto directamente de la realidad y no de la fantasía.</p>
-                <p class="exposition__description">Pintor italiano, activo en Roma, Nápoles, Malta y Sicilia entre 1593 y 1610. Su pintura combina una observación realista de la figura humana, tanto en lo físico como en lo emocional, con un uso dramático de la luz, lo cual ejerció una influencia decisiva en la formación de la pintura del Barroco.</p>
             </div>
 
         </section>
         
+        
         <footer class="footer--small">
-                
+            <!-- avisosLegales -->
             <section class="avisosLegales">
                 <h2 class="footer__title">¿Algun problema?</h1>
                 <p class="writeAnimation">Contactanos</p>
@@ -146,21 +370,21 @@
                     </li>
                 </div>
             </section>
-
+            <!-- lineas -->
             <div class="lines lines--footer disNone lines--footerSmall">
                 <div class="lines__straightLine lines__straightLine--footer"></div>
                 <div class="lines__cube black"></div>
                 <div class="lines__cube black"></div>
                 <div class="lines__straightLine lines__straightLine--footer lines__straightLine--footerShort"></div>
             </div>
-            
+            <!-- lineas -->
             <div class="lines lines--footer lines--socials disNone">
                 <div class="lines__cube black"></div>
                 <div class="lines__straightLine lines__straightLine--footer lines__straightLine--footerShort"></div>
                 <div class="lines__cube black"></div>
                 <div class="lines__straightLine lines__straightLine--footer"></div>
             </div>
-
+            <!-- redesociales -->
             <section class="socials">
                 <div>
                     <h2 class="footer__title footer__title--socials">Nuestrar redes sociales</h1>
@@ -177,6 +401,9 @@
             </section>
         </footer>
     </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/coruoselScript.js"></script>
 
 </body>
 </html>

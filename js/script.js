@@ -1,26 +1,46 @@
-const burguerButton = document.getElementById("burguerButton")
-const burguerNav = document.getElementById("burguerNav")
-const arrowLeft = document.getElementById("arrowLeft")
-const burguerNav__navBar = document.getElementById("burguerNav__navBar")
+const hamburguer=document.getElementById("hamburguer")
+const navOpen= document.getElementById("navOpen")
+const leftArrow=document.getElementById("leftArrow")
 
-const openAndCloseNavbar=()=>{
-    
-    burguerNav.classList.remove("disNone")
+const lupa=document.getElementById("lupa")
+const form=document.getElementById("form")
+const form__fieldset=document.getElementById("form__fieldset")
+const searcher=document.getElementById("searcher")
 
-    if(burguerNav__navBar.classList.contains("openSectionAnimation") ){
-        burguerNav__navBar.classList.remove("openSectionAnimation")
-        burguerNav__navBar.classList.add("closeSection")
+const openNavbar=()=>{
+    navOpen.classList.remove("disNone")
 
-        burguerNav__navBar.classList.remove("openNavBarAnimation")
-        burguerNav__navBar.classList.add("closeNavBarAnimation")
+    if(navOpen.classList.contains("navOpener")){
+        navOpen.classList.remove("navOpener")
+        navOpen.classList.add("navCloser")
+        leftArrow.classList.add("leftArrowCloser")
     }
     else{
-        burguerNav__navBar.classList.remove("closeSection")
-        burguerNav__navBar.classList.add("clocloseSectionse")
-
+        navOpen.classList.add("navOpener")
+        leftArrow.classList.add("leftArrowOpener")
+        navOpen.classList.remove("navCloser")
+        leftArrow.classList.remove("leftArrowCloser")
     }
 }
 
 
-// burguerButton.addEventListener("click", openAndCloseNavbar)
-// arrowLeft.addEventListener("click", openAndCloseNavbar)
+const openSearch=()=>{
+    
+    if(form.classList.contains("form__searchOpen") ){
+        form.classList.remove("form__searchOpen")
+        form__fieldset.classList.remove("form__fieldsetOpen")
+        searcher.classList.add("disNone")
+        
+    }
+    else{
+        form.classList.add("form__searchOpen")
+        form__fieldset.classList.add("form__fieldsetOpen")
+        searcher.classList.remove("disNone")
+    }
+}
+
+
+hamburguer.addEventListener("click", openNavbar)
+leftArrow.addEventListener("click", openNavbar)
+
+lupa.addEventListener("click", openSearch)

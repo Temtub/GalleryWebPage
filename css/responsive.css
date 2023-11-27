@@ -1,5 +1,17 @@
-@media (min-width: 600px) {
 
+@media (min-width: 550px) {
+
+    .socialSections{
+        display: grid;
+        margin: auto;
+    }
+    .socialSections__comments{
+        margin: 0;
+    }
+}
+
+@media (min-width: 635px) {
+    
     .sections{
         display: flex;
         flex-wrap: wrap;
@@ -14,14 +26,38 @@
         width: 91%;
         padding-left: 10px;
     }
+    .socialSections{
+        margin: auto;
+        width: 70%;
+    }
+    .socialSections__comments{
+        margin: 0;
+        /* margin-left: 100px; */
+    }
     
 }
 
 @media (min-width: 1000px) {
 
-    .starteSect{
-        width: 95%;
+    .navBar{
+        padding-left: 100px;
+        display: flex;
+        justify-content: space-around;
     }
+    .navBar__icons{
+        display: flex;
+        width: 10%;
+        align-items: center;
+        height: 50px;
+    }
+    .form__search{
+        right: 250px;
+        top: 70px;
+    }
+    .button__white{
+        display: none;
+    }
+
     .lines--footerSmall{
         display: flex;
         margin: 0;
@@ -48,16 +84,21 @@
         margin-top: 100px;
     }
     .sect{
-        width: 45%;
+        width: 100%;
+    }
+    .sect__title{
+        font-size: 3rem;
+        margin-top: -10px;
+        margin-bottom: -5px;
     }
     .starteSect{
-        width: 95%;
+        width: 96%;
     }
     .expositions{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
+        flex: 450px 400px auto;
         margin: auto;
     }
     .exposition{
@@ -121,5 +162,80 @@
         background-image: url("../assets/images/gallery/caravaggio.jpg");
         background-size: 150%;
         background-repeat: no-repeat;
+    }
+    .socialSections{
+        display: flex;
+        flex-direction: column;
+    }
+    .socialSections__comments{
+        margin-left: 100px;
+    }
+    .carrousel__container{
+        display: grid;
+        width: 60%;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .footer--small{
+        all: reset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .lines--footer{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 5%;
+    }
+    .avisosLegales{
+        width: 40%;
+    }
+    .socials{
+        width: 40%;
+        margin-top: -50px;
+    }
+    .socialSections{
+        padding: 20px;
+        margin: 0;
+        
+        all: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .socialSections__comments{
+        width: 65%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+        margin: 0;
+        margin-top: 100px;
+        
+    }
+    .socialSections__comment--big{
+        display: flex;
+    }
+    .carrousel__container{
+        display: grid;
+        width: 40%;
+        margin: 20px;
+        margin-top: 100px;
+        margin-right: 100px;
+
+    }
+
+    .form__search{
+        right: 450px;
+        top: 70px;
+    }
+    .navOpen{
+        width: 25%;
     }
 }

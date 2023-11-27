@@ -348,8 +348,129 @@ body{
 
 
 /* END of opens the burger button*/
+.navOpen{
+    width: 23%;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
 
+    left: -25%;
+    z-index: 100;
+    color: white;
+    padding: 10px;
+    border-right: 1px solid white;
+    font-family: ModernSans;
+}
+.navOpen__title{
+    font-family: Bebas;
+}
+.navOpen__link{
+    color: white;
+}
+.fa__deactivated{
+    color: rgb(119, 119, 119);
+}
+.navOpen__arrowLeft{
+    position: absolute;
+    top: 50%;
+}
+.leftArrowOpener{
+    animation: openLeftArrow 1s forwards;
+}
+.leftArrowCloser{
+    animation: closeLeftArrow 1s forwards;
+}
+.navOpener{
+    animation: openNavBar 1s forwards;
 
+}
+.navCloser{
+    animation: closeNavBar 1s forwards;
+}
+@keyframes openLeftArrow {
+    from{
+        right: 0px;
+        transform: rotate(180deg);
+    }
+    to{
+        right: -50px;
+        
+        transform: rotate(0deg);
+    }
+}
+@keyframes closeLeftArrow {
+    from{
+        right: -50px;
+        transform: rotate(0deg);
+    }
+    to{
+        right: 0px;
+        transform: rotate(180deg);
+    }
+}
+@keyframes openNavBar {
+    to{
+        left: 0;
+    }
+}
+@keyframes closeNavBar {
+    from{
+        left: 0;
+    }
+    to{
+        left:-25%;
+    }
+}
+
+.form__search{
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    border-radius: 2px;
+    right: 580px;
+    top: 60px;
+    z-index: 60;
+    
+    background-color: transparent;
+    color: transparent;
+    
+}
+.form__fieldset{
+    width: 248px;
+    height: 109px;
+    border-radius: 2px;
+    margin: 0;
+    margin-top: -12px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-color: transparent;
+}
+.form__searchOpen{
+    animation: searchOpener .5s forwards;
+}
+@keyframes searchOpener {
+    to{
+        background-color: black;
+        color: white;
+    }
+}
+.form__fieldsetOpen{
+    animation: fieldsetOpener .5s forwards;
+}
+@keyframes fieldsetOpener {
+    to{
+        border-color: white;
+    }
+}
+
+.form__legend{
+    font-family: Bebas;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
 .navbar{
     height: 90px;
     background-color: aliceblue;
@@ -358,8 +479,29 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
+.navBar__links{
+    color: white;
+}
+.input {
+    outline: none;
 
+    background: transparent;
 
+    color: var(--color-white-redish);
+    
+    border: 0;
+    border-bottom: 2px solid var(--color-white-redish);
+
+    font-size: 14px;
+    font-weight: 300;
+
+    font-family: var(--font-family-noCaps);
+}
+.inputSearch{
+    appearance: none;
+    color: white;
+    
+}
 /* Footer part */
 footer{
     display: flex;
@@ -372,6 +514,7 @@ footer{
 
     padding: 60px;
     margin-top: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.322);
 }
 .footer__title{
     font-family: Bebas; 
